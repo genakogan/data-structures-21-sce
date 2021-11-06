@@ -1,0 +1,90 @@
+.mySlides {
+    display: none;
+    }
+    
+    body {
+    
+    font-family: Verdana, sans-serif;
+    }
+    
+    .head {
+    margin-top: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    text-align: center;
+    font-size: 30px;
+    
+    }
+    
+    .data-container {
+    width: 600px;
+    height: 364px;
+    position: relative;
+    margin: 0 auto;
+    }
+    
+    .bar {
+    width: 28px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 183, 255);
+    transition: 0.2s all ease;
+    }
+    
+    .bar__id {
+    position: absolute;
+   
+    width: 100%;
+    text-align: center;
+    }
+    .btn1
+    {
+    padding: 12px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #77b1f3, #edacf3) !important;
+
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    }
+    .btn2
+    {
+    padding: 12px;
+    font-weight: bolder;
+    background: linear-gradient(to right, #77b1f3, #edacf3) !important;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    border: white
+    }
+    #ele{
+    text-align: center;
+    height: 35px;
+    }
+    
+    /* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background:#77b1f3;
+    
+  }
+      
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+      
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: steelblue;
+    color: black;
+  }

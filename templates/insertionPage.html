@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- head -->
+<head>
+	
+	<!-- linking style.css -->
+	<link rel="stylesheet"  href="{{url_for('static',filename='css/styleInsertion.css')}}"/>
+
+
+</head>
+
+<!-- body -->
+<body>
+	
+<div class="topnav">
+    <a href="{{url_for('bst')}}">Binary Search Tree</a>
+    <a href="{{url_for('Heap')}}">Max Heap </a>
+    <a href="{{url_for('MinHeap')}}">Min Heap</a>            
+    <a href="{{url_for('quick')}}">Quick sort</a>
+    <a href="{{url_for('insertion')}}">Insertion sort</a>
+    <a href="{{url_for('counting')}}">Counting sort</a>
+    <a href="{{url_for('Bfs')}}">Bfs </a>
+    <a href="{{url_for('Dfs')}}">Dfs </a>
+    <a href="{{url_for('Merge')}}">Merge Sort</a>
+    <a href="{{url_for('Avl')}}">Avl Tree</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+  </div>
+	<section class="head">Insertion Sort</section>
+	<section class="data-container">
+		<p id="algIns1">
+			If the key element is smaller than its predecessor, compare it to the elements before. Move the greater elements one position up to make space for 
+		</p>
+		<p id="algIns2"> The selected Element in The Right Position</p>
+	</section>
+	<section id="ele"></section>
+	<div style="margin: auto; width: fit-content;">
+
+	<!-- "Generate New Array" button -->
+<button class="btn1"
+		onclick="generate()" id="Button1" >
+	Generate New Array</button>
+	
+<!-- "Insertion Sort" button -->
+<button class="btn2"
+		onclick="InsertionSort(),disable()"
+		id="Button2" >
+	Insertion Sort</button>
+	</div>	
+</body>
+
+<!-- linking index.js -->
+<script src="{{url_for('static', filename='js/Insertion.js')}}"></script>
+
+
+</html>

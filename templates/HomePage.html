@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <title>Data Structure WebSite</title>
+    <link rel="stylesheet"  href="{{url_for('static',filename='css/styleHome.css')}}"/>
+
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="{{ url_for('static',filename='images_logo/unnamed.png' )}}">
+            </div>
+            <div class="nav-links">
+                <ul>
+                   
+                    <li><a href="{{url_for('bst')}}">Binary Search Tree</a></li>
+                    <li><a href="{{url_for('Heap')}}">Max Heap </a></li>
+                    <li><a href="{{url_for('MinHeap')}}">Min Heap</a></li>
+                   
+                  
+                
+                    <li><a href="{{url_for('quick')}}">Quick sort</a></li>
+                    <li><a href="{{url_for('insertion')}}">Insertion sort</a></li>
+                    <li><a href="{{url_for('counting')}}">Counting sort</a></li>
+                    <li><a href="{{url_for('Bfs')}}">Bfs </a></li>
+                    <li><a href="{{url_for('Dfs')}}">Dfs </a></li>
+                    <li><a href="{{url_for('Merge')}}">Merge Sort</a></li>
+                    <li><a href="{{url_for('Avl')}}">Avl Tree</a></li>
+                    <li><a href="{{url_for('logout')}}">Logout</a></li>
+
+                   
+
+                </ul>
+
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img  href="/final_project2021/images_logo/unnamed.png" class="algorithm">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="{{ url_for('static',filename='images_logo/white_avl.png' )}}">
+                    <div>
+                        <h1 id="avl">Avl Tree</h1>
+                        <p>
+                            Feature :  |hieght of left child - hieght of right child| <= 1
+                        </p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="{{ url_for('static',filename='images_logo/white_BinaryTree.png' )}}">
+                    <div>
+                        <h1 id="bst">Binary Search Tree</h1>
+                        <p>
+                            Feature : Left Child <= parent <= right child
+                        </p>
+                    </div>
+                </div>
+                <div class="feature three">
+                    <div>
+                    <h1 id="MaxHeap">Max Heap</h1>
+                    <p>
+                        Feature : parent >= his children
+                    </p>
+                </div>
+                </div>
+                <div class="feature four">
+                    <div>
+                    <h1 id="MinHeap">Min Heap</h1>
+                    <p>
+                        Feature : parent <= his children
+                    </p>
+                    </div>
+                </div>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+
+
+
+
+
+
+
+          <!--   <div class="feature five">        
+                    <img src="images/quick.png">
+                    <h1>Quick Sort</h1>
+                    <p>
+                        Feature : Sort By Pivot ;)
+                    </p>
+                </div>
+                <div class="feature six">
+                    <img src="images/mrege.png">
+                    <h1>Merge  Sort</h1>
+                    <p>
+                        Feature :  divide and conquer algorithm 
+                    </p>
+
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <img src="{{ url_for('static',filename='images_logo/arrow.png' )}}" id="upBtn">
+        <h3>Data Structure</h3>
+        <img src="{{ url_for('static',filename='images_logo/arrow.png' )}}" id="downBtn">
+
+    </div>
+
+    <script>
+        var circle=document.getElementById("circle");
+        var upBtn=document.getElementById("upBtn");
+        var downBtn=document.getElementById("downBtn");
+        var avl=document.getElementById("avl");
+        var bst=document.getElementById("bst");
+        var MaxHeap=document.getElementById("MaxHeap");
+        var MinHeap=document.getElementById("MinHeap");
+
+        var rotateValue=circle.style.transform;
+        var rotateSum;
+
+        upBtn.onclick= function(){
+            rotateSum=rotateValue+ "rotate(-90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+
+        downBtn.onclick= function(){
+            rotateSum=rotateValue+ "rotate(90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+
+        avl.onclick=function(){
+            window.location='avlGo';
+        }
+
+
+        bst.onclick=function(){
+            window.location = 'bstGo';
+        }
+        MaxHeap.onclick=function()
+        {
+            window.location = 'HeapGo';
+
+        }
+        MinHeap.onclick=function()
+        {
+           window.location = 'MinHeapGo';
+        }
+
+    </script>
+
+
+</body>

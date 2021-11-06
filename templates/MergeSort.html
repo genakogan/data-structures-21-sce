@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js"></script>
+
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="{{url_for('static',filename='vendor/normalize.css')}}"/>
+		<link rel="stylesheet"  href="{{url_for('static',filename='vendor/fontawesome/fontawesome.css')}}"/>
+		<link rel="stylesheet"  href="{{url_for('static',filename='css/mer.css')}}"/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Livvic&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="{{url_for('static',filename='sass/main.css')}}" />
+	<!--	<title style="color: steelblue;">Merge Sort Visualization</title>-->
+
+
+	</head>
+	<body >
+
+		<!---
+		<div id="settings">
+			<div class="menu-header">
+				<div id="close-menu">
+					<i class="fas fa-times"></i>
+				</div>
+				<h2>Settings</h2>
+			</div>
+		-->
+	
+
+			<div class="split left">
+				<div>
+					<p>Array to sort:</p>
+					<input
+						id="arr"
+						type="text"
+						placeholder="[0, 1, 2, 3, 4, ...] - Minimum length: 2"
+					/>
+				</div>
+
+				<div>
+					<p>Animation timeout:</p>
+					<input
+						id="timeout"
+						type="number"
+						placeholder="Miliseconds"
+					/>
+				</div>
+
+				<div class="errors">
+					<p id="settings-error"></p>
+				</div>
+
+				<div class="success">
+					<p id="success"></p>
+				</div>
+			
+				<button class="btn" id="save-settings">Save</button><br>
+				<button class="btn" type="button"  onclick="PrintJpg();">Print jpg </button></br>
+				<button class="btn" type="button"  onclick="PrintPdf();">Print/Download pdf</button></br>
+			</div>
+		<!--</div>-->
+
+		<header>
+			<!--<div class="header-container">
+				<div id="settings-btn">
+					<i class="fas fa-bars"></i>
+				</div>-->
+
+		<!----	</div>-->
+			<div class="gradient-border"></div>
+		</header>
+
+		<main class="split right" id="vis">
+			<section class="animation-zone"></section>
+
+			<section class="errors"><p class="error-msg"></p></section>
+
+			<section class="buttons">
+				<div class="wrapper">
+					<div><button id="sort">Sort</button></div>
+				<!---	<div><button id="unsort">Unsort</button></div>-->
+				</div>
+			</section>
+		</main>
+		<script src="{{url_for('static', filename='vendor/fontawesome/fontawesome.js')}}"></script>
+		<script src="{{url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+		<script src="{{url_for('static', filename='js/arrays.js')}}"></script>
+		<script src="{{url_for('static', filename='js/main.js')}}"></script>
+		<script src="{{url_for('static', filename='js/settings.js')}}"></script>
+		<script src="{{url_for('static', filename='js/animation.js')}}"></script>
+
+
+
+
+
+<!---
+		<script src="vendor/fontawesome/fontawesome.js"></script>
+		<script src="vendor/jquery/jquery.min.js"></script>
+		<script src="js/arrays.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/settings.js"></script>
+		<script src="js/animation.js"></script>
+
+	-->
+	</body>
+</html>

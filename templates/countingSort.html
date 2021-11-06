@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet"  href="{{url_for('static',filename='css/stylecounting.css')}}"/>
+
+
+</head>
+
+<body>
+	
+<div class="topnav">
+    <a href="{{url_for('bst')}}">Binary Search Tree</a>
+    <a href="{{url_for('Heap')}}">Max Heap </a>
+    <a href="{{url_for('MinHeap')}}">Min Heap</a>            
+    <a href="{{url_for('quick')}}">Quick sort</a>
+    <a href="{{url_for('insertion')}}">Insertion sort</a>
+    <a href="{{url_for('counting')}}">Counting sort</a>
+    <a href="{{url_for('Bfs')}}">Bfs </a>
+    <a href="{{url_for('Dfs')}}">Dfs </a>
+    <a href="{{url_for('Merge')}}">Merge Sort</a>
+    <a href="{{url_for('Avl')}}">Avl Tree</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+  </div>
+	<br />
+	<p class="header">Counting Sort</p>
+
+
+	<div id="array"></div>
+	<br />
+	<br />
+
+	<div id="count"></div>
+	<script src="{{url_for('static', filename='js/counting.js')}}"></script>
+
+
+</body>
+</html>

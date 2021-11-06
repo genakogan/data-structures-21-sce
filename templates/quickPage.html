@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--<link rel="stylesheet" href="styleQuick.css" />-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styleQuick.css')}}">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js"></script>
+
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="{{url_for('bst')}}">Binary Search Tree</a>
+        <a href="{{url_for('Heap')}}">Max Heap </a>
+        <a href="{{url_for('MinHeap')}}">Min Heap</a>            
+        <a href="{{url_for('quick')}}">Quick sort</a>
+        <a href="{{url_for('insertion')}}">Insertion sort</a>
+        <a href="{{url_for('counting')}}">Counting sort</a>
+        <a href="{{url_for('Bfs')}}">Bfs </a>
+        <a href="{{url_for('Dfs')}}">Dfs </a>
+        <a href="{{url_for('Merge')}}">Merge Sort</a>
+        <a href="{{url_for('Avl')}}">Avl Tree</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+      </div>
+      
+	<br />
+	<p class="header">
+	Quick Sort 
+	</p>
+    <div id="leftContainer">
+            <table>
+                <tr>
+                    <td>
+                        <!--id="value"-->
+                 <input type="text" id="arr" value=""  placeholder="[0, 1, 2, 3, 4, ...] - Minimum length: 2" size="18">
+                    </td>
+                </tr>
+              
+                   <tr>
+                    <td>
+                        <!--valElement--onclick="generatearray_specif();-->
+                        <button id= "save-settings" class="btn" type="button" >Insert Element</button>
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <button id="RandomElements" class="btn" type="button" onclick="Start();">Random Elements</button>
+                    </td>
+                </tr>
+
+              
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="QuickSortStart();">Quick Sort </button></br>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="PrintPng();">Print jpg </button></br>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                       
+                        <button class="btn" type="button"  onclick="print();">Print/Download pdf </button></br>
+                      
+                    </td>
+                </tr>
+            </table>
+    </div>
+    <div id="rightContainer">
+        <div id="leftContainer">
+	<div id="array"></div>
+	<div id="count"></div>
+    <div class="errors">
+        <p id="settings-error"></p>
+    </div>
+    <div class="success">
+        <p id="success"></p>
+    </div>
+	<br />
+	<h2 class="range"
+		style="text-align: center"></h2>
+    </div>
+    <div id="rightContainer2">
+        <div class="algo" >
+            <p id=alg1>choose a pivot</p>
+            <p id="alg2">Put all smaller on the left of pivot element </p>
+            <p id="alg3">Put all greater on the right of pivot element </p>
+            <p id="alg4">Put current pivot in middle of vlaues</p>
+           
+           
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+	<script src="{{url_for('static', filename='js/testQuick.js')}}"></script>
+    <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+</body>
+</html>

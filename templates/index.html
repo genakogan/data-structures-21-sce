@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet"  href="{{url_for('static',filename='css/styles.css')}}"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+
+<body>
+    
+<div class="topnav">
+    <a href="{{url_for('bst')}}">Binary Search Tree</a>
+    <a href="{{url_for('Heap')}}">Max Heap </a>
+    <a href="{{url_for('MinHeap')}}">Min Heap</a>            
+    <a href="{{url_for('quick')}}">Quick sort</a>
+    <a href="{{url_for('insertion')}}">Insertion sort</a>
+    <a href="{{url_for('counting')}}">Counting sort</a>
+    <a href="{{url_for('Bfs')}}">Bfs </a>
+    <a href="{{url_for('Dfs')}}">Dfs </a>
+    <a href="{{url_for('Merge')}}">Merge Sort</a>
+    <a href="{{url_for('Avl')}}">Avl Tree</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+  </div>
+    <form method="GET" action="">
+<section class="ttt">
+    <nav>
+        <table>
+
+            <tr>
+                <td>
+                    <input type="text" id="value" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Enter value" size="10">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button" onclick="InsertNode();">Insert</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="DeleteNode();">Delete</button></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="SearchNode();">Search</button></br>  
+                </td>
+            </tr>
+        </table>
+    
+        <table>
+
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="InOrder();">Inorder</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   
+                    <button class="btn" type="button"  onclick="Print(bst.preorder);">Preorder</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Print(bst.postorder);">Postorder</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Successor();">Successor</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Predecessor();">Predecessor</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Print(bst.max);">Max</button></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Print(bst.min);">Min</button></br>
+                </td>
+
+            </tr>
+            
+        </table>
+
+<table>
+    <tr>
+        <th>
+            Random Tree
+        </th>
+    </tr>
+    <tr>
+        <td>
+            RANGE From:</br>
+            <input type="text" id="RangeFrom" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="from value" size="5">
+        </br>
+        To:
+        <input type="text" id="RangeTo" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="to value" size="5">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Number of nodes:
+        </br>
+        <input type="text" id="NumNodes" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Enter value" size="5">
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <button class="btn" type="button"  onclick="Go()">Go!</button></br>
+        </td>
+    </tr>
+</table>
+
+
+<button class="btn" type="button"  onclick="Print(bst.printTree);">Print Tree</button></br>
+<button class="btn" type="button"  onclick="PrintPng();">Print jpg Tree</button></br>
+<button class="btn" type="button"  onclick="Clear();">Clear</button></br>
+</div>
+<br>
+
+</nav>
+
+<span id="msg"></span>
+
+<article id="mycanvas">
+  
+
+</article>
+
+<nav>
+   <!-- load the d3.js library -->
+   <script src="{{url_for('static', filename='js/d3.min.js')}}"></script>
+   <script src="{{url_for('static', filename='js/BST_AVL.js')}}"></script>
+   <script src="{{url_for('static', filename='js/graph.js')}}"></script>
+ 
+
+  <!--- <script src="../js/d3.min.js"></script>
+   <script src="../js/BST_AVL.js" charset="utf-8"></script>
+   <script src="../js/graph.js" charset="utf-8"></script>-->
+../
+
+</nav>
+
+
+
+</section>
+
+
+
+</form>
+
+</body>

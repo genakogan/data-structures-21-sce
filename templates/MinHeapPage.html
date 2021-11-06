@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet"  href="{{url_for('static',filename='css/styleHeap.css')}}"/>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.2/d3.min.js"></script>
+
+
+<body id="mycanvas"> 
+    
+<div class="topnav">
+    <a href="{{url_for('bst')}}">Binary Search Tree</a>
+    <a href="{{url_for('Heap')}}">Max Heap </a>
+    <a href="{{url_for('MinHeap')}}">Min Heap</a>            
+    <a href="{{url_for('quick')}}">Quick sort</a>
+    <a href="{{url_for('insertion')}}">Insertion sort</a>
+    <a href="{{url_for('counting')}}">Counting sort</a>
+    <a href="{{url_for('Bfs')}}">Bfs </a>
+    <a href="{{url_for('Dfs')}}">Dfs </a>
+    <a href="{{url_for('Merge')}}">Merge Sort</a>
+    <a href="{{url_for('Avl')}}">Avl Tree</a>
+    <a href="{{url_for('logout')}}">Logout</a>
+  </div>
+<section>
+    <nav>
+        <table>
+
+            <tr>
+                <td>
+                    <input type="text" id="value" value="" onkeypress="handleKeyPress(event)" autofocus placeholder="Enter value" size="18">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="create" class="btn" type="button" onclick="BuildArray();">Build Array</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="update" class="btn" type="button" onclick="InsertValue();">Insert Value</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='remove' class="btn" type="button"  onclick="hp.removeMax();">Delete Value </button></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   
+                    <button class="btn" type="button"  onclick="PrintPng();">Print jpg </button></br>
+                  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   
+                    <button class="btn" type="button"  onclick="Print();">Print/Download PDF</button></br>
+                  
+                </td>
+            </tr>
+          <!-- <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Print(heap.HeapSort);">Heap Sort</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="IncreaseKey();">Increase Key</button></br>  
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="btn" type="button"  onclick="Clear();">Clear</button></br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="update1" class="btn" type="button"  onclick="Update();">Update</button></br>
+                </td>
+            </tr>-->
+        </table>
+<br>
+<span id="msg"></span>
+</nav>
+<div class="mycanvasArray">
+
+</div>
+
+<article >
+
+
+</article>
+<nav class="right">
+ <div id="algo"></div>
+    
+</nav>
+
+<nav>
+
+    <script src="{{url_for('static', filename='lib/d3.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/MinHeap.js')}}"></script>
+    <script src="{{url_for('static', filename='js/MinHeapGraph33.js')}}"></script>
+
+
+
+
+
+   <!---
+   <script src='lib/d3.min.js'></script>
+   <script src="MinHeap.js" charset="utf-8"></script>
+   <script src="MinHeapGraph3.js" charset="utf-8"></script>
+-->
+
+</nav>
+
+
+
+</section>
+
+
+
+
+
+</body>

@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    
+    .header {
+    font-size: 20px;
+    text-align: center;
+    }
+    
+    #array {
+    background-color: white;
+    height: 265px;
+    width: 598px;
+    margin: auto;
+    position: relative;
+    margin-top: 64px;
+    }
+    
+    .block {
+    width: 28px;
+    background-color: steelblue;
+    position: absolute;
+    bottom: 0px;
+    transition: 0.2s all ease;
+    }
+    
+    .block2 {
+    width: 28px;
+    background-color: darkgray;
+    position: absolute;
+    transition: 0.2s all ease;
+    }
+    .block_id {
+    position: absolute;
+    color: black;
+   /* margin-top: -20px;*/
+    width: 100%;
+    text-align: center;
+    }
+    .block_id2 {
+    position: absolute;
+    color: black;
+    margin-top: 22px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    .block_id3 {
+    position: absolute;
+    color: black;
+    margin-top: 1px;
+    width: 100%;
+    text-align: center;
+    }
+    
+    #count {
+    height: 265px;
+    width: 598px;
+    margin: auto;
+    }
+    
+    /* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background:#77b1f3;
+    
+  }
+      
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+      
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: steelblue;
+    color: black;
+  }

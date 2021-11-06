@@ -1,0 +1,234 @@
+.node circle {
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+
+}
+.circle{
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 3px;
+
+}
+.node text { font: 24px sans-serif; }
+
+.node--internal text {
+  text-shadow: 0 1px 0 #fff, 0 -1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff;
+}
+
+.link {
+  fill: none;
+  stroke: rgb(15, 12, 12);
+  stroke-width: 6px;
+
+  opacity: 0.5;
+  /*stroke-dasharray: 10, 4;*/
+}
+.btn{
+    border-radius: 4px;
+   background: linear-gradient(to right, #77b1f3, #edacf3) !important;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 11px;
+   padding: 10px;
+   width: 150px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+    
+}
+
+.btn2 {
+    box-shadow: 3px 4px 0px 0px #E3E4E7;
+    background:linear-gradient(to bottom, #ededed 5%, #9bc1ec 100%);
+    background-color:#ededed;
+    border-radius:15px;
+    border:1px solid #d6bcd6;
+    display:inline-block;
+    cursor:pointer;
+    color:#3a8a9e;
+    font-family:Arial;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e1e2ed;
+    width: 400px;
+}
+btn:hover {
+    background:linear-gradient(to bottom, #9bc1ec 5%, #ededed 100%);
+    background-color:#bab1ba;
+}
+btn:active {
+    position:relative;
+    top:1px;
+    
+}
+btn2:hover {
+    background:linear-gradient(to bottom, #9bc1ec 5%, #ededed 100%);
+    background-color:#bab1ba;
+}
+btn2:active {
+    position:relative;
+    top:1px;
+    
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Create two columns/boxes that floats next to each other */
+nav {
+    margin-top:0%;
+    float: left;
+    width: 130px;
+    height: 100%; /* only for demonstration, should be removed */
+    position: relative;
+    background: #ffffff;
+    /*padding: 20px;*/
+  }
+
+  .right{
+    overflow:hidden;border-top:solid;border-bottom:solid;
+    margin-top:0%;
+    top:0;
+    float: right;
+    right: 0%;
+    width: 20%;
+    height: 70%; /* only for demonstration, should be removed */
+    position: absolute;
+    border:2px;
+    border-color: black;
+   /* background: linear-gradient(to right, #77b1f3, #edacf3) !important;
+   /*fill:linear-gradient(to right, #77b1f3, #edacf3) !important;
+    padding: 20px;*/
+  }
+
+article{
+    top:150px;
+
+    left: 200px;
+    width: 80%;
+    height: 100%;
+    position: relative;
+  }
+/* .artcile-home{
+    top:250px;
+    left: 500px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}*/
+
+  table{
+    font-family: arial, sans-serif;
+    border: #3a8a9e;
+    overflow: hidden;
+    border-style: hidden;
+    position: relative;
+    border-width: thick;
+    border-color: red;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 15px 15px;
+    stroke-width: 19px;
+    height: 100px;
+  }
+  
+  td, th {
+    border: 1px solid #fff  ;
+    text-align: left;
+    padding: 2px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #fafcfd;
+  }
+
+
+
+.mycanvasArray {
+  left: 200px;
+  position: relative;
+  /*background-color: red;*/
+  border: 1px solid #fff  ;
+  text-align: left;
+  
+}
+
+.mycanvasBfs {
+  left: 200px;
+  position: relative;
+  /*background-color: red;*/
+  border: 1px solid #fff  ;
+  text-align: left;
+  
+}
+.mycanvas {
+  position: absolute;
+  right: 200px;
+  left:300px;
+ /* background-color: black;
+  padding: 90%;*/
+  border: 1px solid #fff  ;
+  text-align: left;
+}
+
+.drowTable{
+  top:0;
+  font-family: arial, sans-serif;
+  border: #022c36;
+  overflow: hidden;
+  border-style: hidden;
+  position: absolute;
+  border-width: thick;
+  border-color: rgb(127, 32, 190);
+  border-collapse: collapse;
+  width: 50%;
+  border-radius: 15px 15px;
+  height: 80px;
+  background-color: rgb(175, 217, 252);
+}
+
+.valColumn{
+  border: 1px solid rgb(54, 13, 167)  ;
+  text-align: left;
+  
+}
+#algo{
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: linear-gradient(to right, #77b1f3, #edacf3) !important;
+ }
+
+ .flex-end {
+  text-align: right;
+  border: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background:#77b1f3;
+  
+}
+    
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+    
+/* Change color on hover */
+.topnav a:hover {
+  background-color: steelblue;
+  color: black;
+}
